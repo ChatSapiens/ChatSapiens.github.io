@@ -51,7 +51,7 @@
     background-attachment: scroll; 
 }
 .main{
-    background-color: #FFFFFF;
+    background-color: #883a3a;
 }
 .navigation-example{
     height: 660px;
@@ -334,7 +334,7 @@
 .logo-container .logo{
     overflow: hidden;
     border-radius: 50%;
-    border: 1px solid #333333;
+    border: 1px solid #1a1a1a;
     height: 50px;
     width: 50px;
     float: left;
