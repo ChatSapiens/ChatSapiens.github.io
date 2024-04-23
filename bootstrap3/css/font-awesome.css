@@ -25,6 +25,27 @@
  */
 /* FONT PATH
  * -------------------------- */
+
+.navbar {
+  background-size: cover;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  margin-right: 10px;
+  text-transform: uppercase;
+  
+ }
+ .navbar a {
+  display: block;
+  padding: 50px 50px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+ }
+ .navbar a:hover{
+    background: #8d1212;
+ }
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.0.1');
