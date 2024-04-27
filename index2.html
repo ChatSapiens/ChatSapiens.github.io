@@ -1,154 +1,137 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pruebas</title>
-    <style>
-        .contenedor {
-            display: flex;
-            justify-content: center;
-            /* Para centrar los elementos en el eje horizontal */
-            margin-bottom: 20px;
-            position: relative;
-        }
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Formulario Cotizacion</title>
 
-        .rectangulo {
-            width: 200px;
-            height: 120px;
-            background-color: #1a1a1a;
-            border-radius: 1px 15px;
-            margin-left: 20px;
-            /* Espacio entre los rectángulos */
-            margin-right: 20px;
-            /* Espacio entre los rectángulos */
-            padding: 20px;
-            text-align: center;
-            /* Para centrar el texto dentro del rectángulo */
-            position: relative;
-        }
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+	
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    
+	<link href="assets/css/gsdk.css" rel="stylesheet" />   
+    <link href="assets/css/demo.css" rel="stylesheet" />  
 
-        .rectangulo p {
-            font-family: 'Sans Pro', sans-serif;
-            font-weight: bold;
-            color: #1a1a1a;
-        }
+    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
 
-        .carta {
-            width: 240px;
-            height: 320px;
-            background-color: #ffffff;
-            border-radius: 1px 15px;
-            position: absolute;
-            bottom: -300px;
-            /* Cambiar la altura de acuerdo al tamaño de la carta */
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-            box-shadow: 0px 2px 4px #292828d7;
-        }
+	<script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 
-        .carta2 {
-            width: 240px;
-            height: 50px;
-            background-color: #1a1a1a;
-            border-radius: 1px 15px;
-            position: absolute;
-            bottom: -5px;
-            /* Cambiar la altura de acuerdo al tamaño de la carta */
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-            box-shadow: 0px 2px 4px #292828d7;
-        }
-
-
-
-        .contenido-carta {
-            padding: 10px;
-        }
-    </style>
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/gsdk-checkbox.js"></script>
+	<script src="assets/js/gsdk-radio.js"></script>
+	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="assets/js/get-shit-done.js"></script>
+  
 </head>
-
 <body>
 
-    <div class="contenedor">
-        <div class="rectangulo">
-            <img src="assets/img/RobotB.png" alt="Imagen 1" style="width: 60px;">
-            <p style="font-family: 'Sans Pro', sans-serif; font-weight: bold; color: #ffffff;">Basic</p>
-            <!-- Agregar contenido aquí -->
-            <div class="carta">
-                <div class="contenido-carta">
-                    <p><strong>Plan Básico</strong></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold"> Funcionalidades esenciales </li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold"> Limitaciones en lapersonalización </li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Soporte básico</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Acceso a contenido limitado</li>
-                </div>
-                <div class="carta2">
-                    <div class="row">
-                         <!-- Utilizamos la clase text-right para alinear el texto a la derecha -->
-                         <p style="font-family: 'Sans Pro', sans-serif; font-weight: bold; color: #ffffff;">------ Ver Mas ------</p>
-                        
+<div id="navbar-full">
+    <div class="container">
+        <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
+          
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="https://github.com/ChatSapiens/ChatSapiens.github.io">
+                     <div class="logo-container">
+                        <div class="logo">
+                            <img src="assets/img/new_logo.png">
+                        </div>
+                        <div class="brand">
+                            Chat Sapiens
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-        </div>
         
-        <div class="rectangulo">
-            <img src="assets/img/RobotF.png" alt="Imagen 1" style="width: 50px;">
-            <p style="font-family: 'Sans Pro', sans-serif; font-weight: bold; color: #ffffff;">Founders</p>
-            <!--Agregar contenido xd-->
-            <div class="carta">
-                <div class="contenido-carta">
-                    <p><strong>Plan Founders</strong></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Funcionalidades adicionales.</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Personalización moderada.</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Soporte técnico ampliado.</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Acceso a contenido exclusivo.</li>
-                </div>
-                <div class="carta2">
-                    <div class="row">
-                         <!-- Utilizamos la clase text-right para alinear el texto a la derecha -->
-                         <p style="font-family: 'Sans Pro', sans-serif; font-weight: bold; color: #ffffff;">------ Ver Mas ------</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rectangulo">
-            <img src="assets/img/RobotP.png" alt="Imagen 1" style="width: 60px;">
-            <p style="font-family: 'Sans Pro', sans-serif; font-weight: bold; color: #ffffff;">Pro+</p>
-            <!--Agregar contenido xd-->
-            <div class="carta">
-                <div class="contenido-carta">
-                    <p><strong>Plan Pro+</strong></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Funcionalidades avanzadas.</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Personalización completa.</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Soporte prioritario.</li>
-                    <p></p>
-                    <li style="font-family: 'Sans Pro', sans-serif; font-weight: bold">Acceso total a todas las características.</li>
-                </div>
-                <div class="carta2">
-                    <div class="row">
-                         <!-- Utilizamos la clase text-right para alinear el texto a la derecha -->
-                         <p style="font-family: 'Sans Pro', sans-serif; font-weight: bold; color: #ffffff;">------ Ver Mas ------</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end container-->
+    
+    <div class='blurred-container'>
+        <div class="img-src" style="background-image: url('assets/img/cover_4_blur.jpg')"></div>
+        <div class="img-src img-blurred" style="background-image: url('assets/img/cover_4.jpg')"></div>
     </div>
+    
+</div>
+
+
+
+<div class="main">
+    <div class="container tim-container">
+        <h2 class="title" style="text-align: center;"><span style="font-size: 32px; line-height: normal;">Formulario de Contacto</span></h2>
+        <div class="row tim-row">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+        <!-- end row -->
+        <div class="space"></div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</div>
+
+
+<div class="footer">
+    <div class="overlayer">
+    <div class="container">
+        <div class="row support">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="credits">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> ChatSapiens <a
+                  href="https://github.com/ChatSapiens/ChatSapiens.github.io">By Felipe Correa,
+                  Baltazar Escalante y Lenny Roa</a>, hecho con <i class="fa fa-heart heart"
+                  alt="love"></i> hacia los ChatBots.
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+</div>
 
 </body>
 
