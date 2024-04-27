@@ -176,18 +176,18 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.3);
+    background-color: #1a1a1a;
     display: block;
     content: "";
     z-index: 0;
 }
 .parallax-pro .container{
-    padding-top: 20px;
+    padding-top: 10px;
     z-index: 1;
     position: relative;
 }
 .parallax-pro .hello a{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 .parallax-pro .hello{
