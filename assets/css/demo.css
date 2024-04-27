@@ -1,4 +1,65 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    /* Para centrar los elementos en el eje horizontal */
+    margin-bottom: 20px;
+    position: relative;
+  }
 
+  .rectangulo {
+    width: 231px;
+    height: 140px;
+    background-color: #1a1a1a;
+    border-radius: 1px 15px;
+    margin-left: 40px;
+    /* Espacio entre los rectángulos */
+    margin-right: 40px;
+    /* Espacio entre los rectángulos */
+    padding: 20px;
+    text-align: center;
+    /* Para centrar el texto dentro del rectángulo */
+    position: relative;
+  }
+
+  .rectangulo p {
+    font-family: 'Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  .carta {
+    width: 231px;
+    height: 325px;
+    background-color: #ffffff;
+    border-radius: 1px 15px;
+    position: absolute;
+    bottom: -310px;
+    /* Cambiar la altura de acuerdo al tamaño de la carta */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0px 2px 4px #292828d7;
+  }
+
+  .carta2 {
+    width: 231px;
+    height: 50px;
+    background-color: #1a1a1a;
+    border-radius: 1px 15px;
+    position: absolute;
+    bottom: -1px;
+    /* Cambiar la altura de acuerdo al tamaño de la carta */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0px 2px 4px #292828d7;
+  }
+
+
+  .contenido-carta {
+    padding: 10px;
+  }
+  
 .tim-container{
     background: #ffffff;
 
